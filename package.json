@@ -1,0 +1,31 @@
+{
+  "name": "@didi/babel-plugin-global-loader",
+  "version": "0.0.1",
+  "description": "transform es module import to global require",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://git.xiaojukeji.com/soda-fe-lab/babel-plugin-global-variable"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "test": "npm run build && nyc ava"
+  },
+  "author": "",
+  "license": "MIT",
+  "ava": {
+    "files": [
+      "test/index.js"
+    ]
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "nyc": "^13.1.0"
+  }
+}
